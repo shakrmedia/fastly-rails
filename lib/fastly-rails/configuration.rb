@@ -27,13 +27,17 @@ module FastlyRails
       @purging_enabled
     end
 
+    def service_id=(service_id)
+      Array.wrap(service_id)
+    end
+
     private
 
     def has_credentials?
       user && password
     end
 
-    def service_id_nil?
+    def e_nil?
       service_id.nil?
     end
 
