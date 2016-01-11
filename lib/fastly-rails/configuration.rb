@@ -28,7 +28,7 @@ module FastlyRails
     end
 
     def service_id=(service_id)
-      Array.wrap(service_id)
+      @service_id = Array.wrap(service_id)
     end
 
     private
