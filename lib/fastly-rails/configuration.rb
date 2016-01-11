@@ -37,7 +37,7 @@ module FastlyRails
       user && password
     end
 
-    def e_nil?
+    def service_id_nil?
       service_id.nil?
     end
 
